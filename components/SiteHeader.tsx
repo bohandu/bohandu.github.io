@@ -35,11 +35,17 @@ export function SiteHeader({
           <div aria-label="教育经历校徽" className="flex shrink-0 items-center gap-2">
             {educationLogos.map((logo) => (
               <span
-                className="flex h-8 w-8 items-center justify-center rounded-md border border-line bg-bg"
+                className="flex h-10 max-w-[88px] items-center justify-center rounded-md border border-line bg-bg px-2 sm:h-11 sm:max-w-[128px] sm:px-3"
                 key={logo.name}
                 title={logo.name}
               >
-                <Image alt={logo.alt} height={24} src={logo.image} width={24} />
+                <Image
+                  alt={logo.alt}
+                  className="h-6 w-auto max-w-full object-contain sm:h-7"
+                  height={28}
+                  src={logo.image}
+                  width={128}
+                />
               </span>
             ))}
           </div>
