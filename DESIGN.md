@@ -27,11 +27,12 @@ Use OKLCH color values throughout.
 
 ## Typography
 
-Use system Chinese sans-serif stacks for speed and reliability:
+Use self-hosted Noto Sans SC for a more polished Chinese reading experience, then fall back to reliable system Chinese sans-serif stacks:
 
 ```css
-font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-  "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+font-family: "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
+  BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
+  sans-serif;
 ```
 
 Headings should be compact, confident, and free of decorative letter spacing. Body copy should stay within readable line lengths.
@@ -39,6 +40,8 @@ Headings should be compact, confident, and free of decorative letter spacing. Bo
 ## Components
 
 Cards use 8px radius or less. Buttons use icons where available and clear text only when the action needs it. Filtering controls use segmented buttons. Persistent actions are fixed at the top right on desktop and collapse into a hamburger menu on mobile.
+
+The top navigation is sticky, white, lightly bordered, and deliberately quiet. The name block can display two compact education logo slots after the name for Renmin University of China and University of Amsterdam; these should stay small enough to support credibility without turning the navigation into a resume banner.
 
 ## Layout
 

@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import "@fontsource/noto-sans-sc/400.css";
+import "@fontsource/noto-sans-sc/500.css";
+import "@fontsource/noto-sans-sc/600.css";
+import "@fontsource/noto-sans-sc/700.css";
 import "./globals.css";
 import { FloatingActions } from "@/components/FloatingActions";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -17,7 +21,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="zh-CN">
       <body>
         <div className="page-shell">
-          <SiteHeader name={profile.name} romanizedName={profile.romanizedName} />
+          <SiteHeader
+            educationLogos={profile.educationLogos}
+            name={profile.name}
+            romanizedName={profile.romanizedName}
+          />
           <FloatingActions profile={profile} />
           {children}
         </div>
