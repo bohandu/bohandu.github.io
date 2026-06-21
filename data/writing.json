@@ -1,0 +1,38 @@
+[
+  {
+    "title": "示例报道：城市更新中的青年租住经验",
+    "publication": "示例媒体",
+    "date": "2026-06-01",
+    "category": "新闻报道",
+    "description": "这是一个写作作品占位示例，用来展示标题、媒体、日期、简介和外部链接的排版方式。",
+    "link": "https://example.com",
+    "featured": true
+  },
+  {
+    "title": "示例评论：内容平台如何改变日常表达",
+    "publication": "示例专栏",
+    "date": "2026-05-15",
+    "category": "评论",
+    "description": "后续可以替换为真实评论文章。分类字段会驱动页面上的无刷新筛选按钮。",
+    "link": "https://example.com",
+    "featured": true
+  },
+  {
+    "title": "示例播客：一次关于 AI 与创作流程的访谈",
+    "publication": "示例播客",
+    "date": "2026-04-20",
+    "category": "播客",
+    "description": "适合放播客节目页、音频平台链接或文字整理稿链接。",
+    "link": "https://example.com",
+    "featured": false
+  },
+  {
+    "title": "示例报道：本地商业空间的社区角色",
+    "publication": "示例媒体",
+    "date": "2026-03-12",
+    "category": "新闻报道",
+    "description": "用于测试多条新闻报道在网格中的展示效果，真实上线前可删除。",
+    "link": "https://example.com",
+    "featured": false
+  }
+]

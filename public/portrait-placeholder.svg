@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="840" viewBox="0 0 680 840" role="img" aria-labelledby="title desc">
+  <title id="title">杜博涵头像占位图</title>
+  <desc id="desc">深靛色背景上的杜字与 Bohan Du 英文缩写，可替换为正式职业照。</desc>
+  <rect width="680" height="840" fill="oklch(0.935 0.008 270)"/>
+  <rect x="44" y="44" width="592" height="752" rx="12" fill="oklch(1 0 0)" stroke="oklch(0.88 0.006 270)" stroke-width="2"/>
+  <circle cx="340" cy="310" r="142" fill="oklch(0.36 0.13 270)"/>
+  <text x="340" y="350" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="132" font-weight="700" fill="white">杜</text>
+  <path d="M176 600c46-74 101-111 164-111s118 37 164 111v64H176z" fill="oklch(0.92 0.04 270)"/>
+  <text x="340" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="oklch(0.18 0.025 270)">BOHAN DU</text>
+</svg>

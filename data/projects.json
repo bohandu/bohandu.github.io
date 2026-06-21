@@ -1,0 +1,38 @@
+[
+  {
+    "title": "AI 播客实验",
+    "date": "2026-06-01",
+    "status": "进行中",
+    "description": "探索 AI 在选题策划、资料整理、脚本初稿、声音内容复盘中的辅助作用，目标是形成可复用的播客制作流程。",
+    "technologies": ["AI 辅助写作", "播客制作", "内容流程"],
+    "tags": ["AI", "Podcast"],
+    "thumbnail": "/project-podcast.svg",
+    "thumbnailAlt": "AI 播客实验项目封面",
+    "link": "https://example.com",
+    "featured": true
+  },
+  {
+    "title": "个人论文与传播研究",
+    "date": "2026-05-01",
+    "status": "整理中",
+    "description": "围绕新闻传播、媒体平台和内容生产展开的个人论文与研究材料。后续可以加入摘要、方法、数据和全文链接。",
+    "technologies": ["文献综述", "传播研究", "资料整理"],
+    "tags": ["Research", "Writing"],
+    "thumbnail": "/project-paper.svg",
+    "thumbnailAlt": "个人论文与传播研究项目封面",
+    "link": "https://example.com",
+    "featured": true
+  },
+  {
+    "title": "媒体研究工具箱",
+    "date": "2026-07-01",
+    "status": "规划中",
+    "description": "预留给假期探索中的数据整理、文本分析、可视化或小型产品原型。可以从一个很小的工具开始逐步扩展。",
+    "technologies": ["Python", "文本分析", "可视化"],
+    "tags": ["Tools", "Data"],
+    "thumbnail": "/project-toolkit.svg",
+    "thumbnailAlt": "媒体研究工具箱项目封面",
+    "link": "https://example.com",
+    "featured": false
+  }
+]

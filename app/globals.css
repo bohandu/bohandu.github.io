@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: oklch(1 0 0);
+  --surface: oklch(0.972 0.004 270);
+  --surface-strong: oklch(0.935 0.008 270);
+  --ink: oklch(0.18 0.025 270);
+  --muted: oklch(0.42 0.02 270);
+  --line: oklch(0.88 0.006 270);
+  --primary: oklch(0.36 0.13 270);
+  --primary-soft: oklch(0.92 0.04 270);
+  --accent: oklch(0.52 0.105 150);
+  --accent-soft: oklch(0.93 0.04 150);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.page-shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, oklch(0.98 0.008 270) 0%, oklch(1 0 0) 280px),
+    var(--bg);
+}
+
+.content-width {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.copy-width {
+  max-width: 68ch;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.stable-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.link-underline {
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

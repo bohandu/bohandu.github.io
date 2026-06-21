@@ -1,0 +1,31 @@
+{
+  "name": "杜博涵",
+  "romanizedName": "Bohan Du",
+  "headline": "内容工作者丨传播专家",
+  "bio": [
+    "新闻传播背景出身，关注写作、播客、媒体研究与 AI 工具如何进入真实内容生产。",
+    "这个网站先作为中文求职作品集 demo，后续可以持续替换为真实作品、项目链接和简历文件。",
+    "页面刻意保留较宽的职业表达空间，方便投递内容、传播、研究、产品相关岗位。"
+  ],
+  "headshot": "/portrait-placeholder.svg",
+  "resumeUrl": "/resume.pdf",
+  "linkedinUrl": "https://www.linkedin.com/",
+  "highlights": [
+    {
+      "title": "新闻传播训练",
+      "description": "具备写作、资料整理、选题判断和传播研究基础。"
+    },
+    {
+      "title": "播客制作",
+      "description": "关注声音内容的策划、访谈、剪辑和分发。"
+    },
+    {
+      "title": "AI 内容实验",
+      "description": "探索 AI 在播客、写作和研究流程中的辅助作用。"
+    },
+    {
+      "title": "可持续更新",
+      "description": "作品、项目和链接都可以通过 JSON 文件手动维护。"
+    }
+  ]
+}

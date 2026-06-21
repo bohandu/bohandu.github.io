@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">媒体研究工具箱项目封面</title>
+  <desc id="desc">数据表格、节点和工具面板组成的媒体研究工具箱封面。</desc>
+  <rect width="1280" height="720" fill="oklch(0.18 0.025 270)"/>
+  <rect x="86" y="82" width="1108" height="556" rx="12" fill="oklch(1 0 0)"/>
+  <rect x="150" y="150" width="344" height="420" rx="8" fill="oklch(0.935 0.008 270)"/>
+  <path d="M194 224h256M194 300h256M194 376h256M194 452h256" stroke="oklch(0.42 0.02 270)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="686" cy="260" r="54" fill="oklch(0.36 0.13 270)"/>
+  <circle cx="880" cy="240" r="44" fill="oklch(0.52 0.105 150)"/>
+  <circle cx="824" cy="444" r="70" fill="oklch(0.92 0.04 270)"/>
+  <path d="M732 260h104M864 282l-36 102M738 300l52 92" stroke="oklch(0.18 0.025 270)" stroke-width="12" stroke-linecap="round"/>
+  <rect x="998" y="170" width="96" height="352" rx="8" fill="oklch(0.36 0.13 270)"/>
+</svg>

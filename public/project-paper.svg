@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">个人论文与传播研究项目封面</title>
+  <desc id="desc">纸张、批注和引用标记组成的研究项目封面。</desc>
+  <rect width="1280" height="720" fill="oklch(0.972 0.004 270)"/>
+  <rect x="178" y="78" width="760" height="564" rx="10" fill="white" stroke="oklch(0.88 0.006 270)" stroke-width="3"/>
+  <rect x="256" y="158" width="430" height="26" rx="13" fill="oklch(0.18 0.025 270)"/>
+  <rect x="256" y="226" width="570" height="18" rx="9" fill="oklch(0.42 0.02 270)"/>
+  <rect x="256" y="274" width="500" height="18" rx="9" fill="oklch(0.42 0.02 270)"/>
+  <rect x="256" y="322" width="548" height="18" rx="9" fill="oklch(0.42 0.02 270)"/>
+  <rect x="256" y="404" width="312" height="112" rx="8" fill="oklch(0.92 0.04 270)"/>
+  <rect x="614" y="404" width="212" height="112" rx="8" fill="oklch(0.93 0.04 150)"/>
+  <rect x="826" y="172" width="270" height="148" rx="8" fill="oklch(0.36 0.13 270)"/>
+  <text x="961" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="white">PDF</text>
+</svg>
