@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ExternalLink, FileDown, Menu, X } from "lucide-react";
+import { ExternalLink, FileDown, Menu } from "lucide-react";
 import type { Profile } from "@/lib/content";
 
 export function FloatingActions({ profile }: { profile: Profile }) {
@@ -30,31 +30,41 @@ export function FloatingActions({ profile }: { profile: Profile }) {
         </a>
       </div>
 
-      <div className="md:hidden">
+      <div className="flex flex-col items-end md:hidden">
         <button
           aria-expanded={open}
-          aria-label={open ? "关闭菜单" : "打开菜单"}
+          aria-haspopup="menu"
+          aria-label={open ? "收起菜单" : "打开菜单"}
           className="flex h-11 w-11 items-center justify-center rounded-md border border-line bg-bg text-ink shadow-crisp"
           onClick={() => setOpen((value) => !value)}
           type="button"
         >
-          {open ? <X aria-hidden size={20} /> : <Menu aria-hidden size={20} />}
+          <Menu aria-hidden size={20} />
         </button>
         {open ? (
-          <div className="mt-2 w-44 rounded-md border border-line bg-bg p-2 shadow-crisp">
-            <a className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface" href="/">
+          <div className="mt-2 w-44 rounded-md border border-line bg-bg p-2 shadow-crisp" role="menu">
+            <a className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface" href="/" role="menuitem">
               首页
             </a>
-            <a className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface" href="/writing/">
+            <a
+              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
+              href="/writing/"
+              role="menuitem"
+            >
               写作作品
             </a>
-            <a className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface" href="/projects/">
+            <a
+              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
+              href="/projects/"
+              role="menuitem"
+            >
               AI 项目
             </a>
             <a
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
               href={profile.resumeUrl}
               rel="noreferrer"
+              role="menuitem"
               target="_blank"
             >
               <FileDown aria-hidden size={16} />
@@ -64,6 +74,7 @@ export function FloatingActions({ profile }: { profile: Profile }) {
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
               href={profile.linkedinUrl}
               rel="noreferrer"
+              role="menuitem"
               target="_blank"
             >
               <ExternalLink aria-hidden size={16} />

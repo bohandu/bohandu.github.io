@@ -32,25 +32,25 @@ export function SiteHeader({
               {romanizedName}
             </span>
           </Link>
-          <div aria-label="教育经历校徽" className="flex shrink-0 items-center gap-2">
+          <div aria-label="教育经历校徽" className="flex shrink-0 items-center gap-3">
             {educationLogos.map((logo) => (
               <span
-                className="flex h-10 max-w-[88px] items-center justify-center rounded-md border border-line bg-bg px-2 sm:h-11 sm:max-w-[128px] sm:px-3"
+                className="flex h-9 max-w-[96px] shrink-0 items-center justify-center sm:max-w-[148px] md:h-10 md:max-w-[176px]"
                 key={logo.name}
                 title={logo.name}
               >
                 <Image
                   alt={logo.alt}
-                  className="h-6 w-auto max-w-full object-contain sm:h-7"
-                  height={28}
+                  className="h-7 w-auto max-w-full object-contain md:h-8"
+                  height={32}
                   src={logo.image}
-                  width={128}
+                  width={152}
                 />
               </span>
             ))}
           </div>
         </div>
-        <nav aria-label="主导航" className="hidden items-center gap-6 text-sm font-medium text-muted sm:flex">
+        <nav aria-label="主导航" className="hidden items-center gap-7 text-sm font-semibold text-ink sm:flex">
           {navItems.map((item) => (
             <Link className="transition hover:text-primary" href={item.href} key={item.href}>
               {item.label}
