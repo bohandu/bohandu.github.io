@@ -60,7 +60,44 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - `headshot`：头像路径。图片放到 `public` 后写成 `/文件名`。
 - `resumeUrl`：简历链接。默认指向 `/resume.pdf`。
 - `linkedinUrl`：LinkedIn 链接。
+- `navigation`：顶部导航栏文字和链接。
 - `educationLogos`：顶部名字后的校徽图片位。替换 `image` 字段即可。
+
+### 修改顶部导航栏文字
+
+编辑 `data/profile.json` 里的 `navigation`：
+
+```json
+"navigation": [
+  {
+    "label": "首页",
+    "href": "/"
+  },
+  {
+    "label": "内容作品",
+    "href": "/writing/"
+  },
+  {
+    "label": "AI 项目",
+    "href": "/projects/"
+  }
+]
+```
+
+说明：
+
+- `label` 是网页上显示的文字。
+- `href` 是点击后跳转到哪里。
+- 只改文字时，改 `label` 就行。
+- 不建议随便改 `href`，除非已经有对应页面。
+
+例子：如果以后觉得“写作作品”太窄，可以把它改成：
+
+```json
+"label": "内容作品"
+```
+
+如果要新增一个导航项，例如 `研究`，需要先有对应页面，比如 `/research/`。否则导航能显示，但点进去会是 404。
 
 ### 新增写作作品
 

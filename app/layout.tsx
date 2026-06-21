@@ -24,6 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <SiteHeader
             educationLogos={profile.educationLogos}
             name={profile.name}
+            navigationItems={profile.navigation}
             romanizedName={profile.romanizedName}
           />
           <FloatingActions profile={profile} />

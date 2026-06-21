@@ -1,25 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const navItems = [
-  { href: "/", label: "首页" },
-  { href: "/writing/", label: "写作作品" },
-  { href: "/projects/", label: "AI 项目" }
-];
-
-type EducationLogo = {
-  name: string;
-  image: string;
-  alt: string;
-};
+import type { Profile } from "@/lib/content";
 
 export function SiteHeader({
   educationLogos,
   name,
+  navigationItems,
   romanizedName
 }: {
-  educationLogos: EducationLogo[];
+  educationLogos: Profile["educationLogos"];
   name: string;
+  navigationItems: Profile["navigation"];
   romanizedName: string;
 }) {
   return (
@@ -50,8 +41,8 @@ export function SiteHeader({
             ))}
           </div>
         </div>
-        <nav aria-label="主导航" className="hidden items-center gap-7 text-sm font-semibold text-ink sm:flex">
-          {navItems.map((item) => (
+        <nav aria-label="主导航" className="hidden items-center gap-7 text-base font-semibold text-ink sm:flex">
+          {navigationItems.map((item) => (
             <Link className="transition hover:text-primary" href={item.href} key={item.href}>
               {item.label}
             </Link>

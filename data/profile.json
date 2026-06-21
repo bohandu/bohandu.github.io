@@ -10,6 +10,20 @@
   "headshot": "/portrait-placeholder.svg",
   "resumeUrl": "/resume.pdf",
   "linkedinUrl": "https://www.linkedin.com/in/bohandu",
+  "navigation": [
+    {
+      "label": "首页",
+      "href": "/"
+    },
+    {
+      "label": "写作作品",
+      "href": "/writing/"
+    },
+    {
+      "label": "AI 项目",
+      "href": "/projects/"
+    }
+  ],
   "educationLogos": [
     {
       "name": "中国人民大学",

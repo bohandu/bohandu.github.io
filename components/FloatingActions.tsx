@@ -11,7 +11,7 @@ export function FloatingActions({ profile }: { profile: Profile }) {
     <div className="fixed right-4 top-4 z-40">
       <div className="hidden gap-2 md:flex">
         <a
-          className="inline-flex min-h-10 items-center gap-2 rounded-md bg-primary px-4 text-sm font-semibold text-white shadow-crisp transition hover:bg-ink"
+          className="inline-flex min-h-10 items-center gap-2 rounded-md bg-primary px-4 text-base font-semibold text-white shadow-crisp transition hover:bg-ink"
           href={profile.resumeUrl}
           rel="noreferrer"
           target="_blank"
@@ -20,13 +20,13 @@ export function FloatingActions({ profile }: { profile: Profile }) {
           简历
         </a>
         <a
-          className="inline-flex min-h-10 items-center gap-2 rounded-md border border-line bg-bg px-4 text-sm font-semibold text-ink shadow-crisp transition hover:border-primary hover:text-primary"
+          className="inline-flex min-h-10 items-center gap-2 rounded-md border border-line bg-bg px-4 text-base font-semibold text-ink shadow-crisp transition hover:border-primary hover:text-primary"
           href={profile.linkedinUrl}
           rel="noreferrer"
           target="_blank"
         >
           <ExternalLink aria-hidden size={17} />
-          LinkedIn
+          领英
         </a>
       </div>
 
@@ -43,23 +43,16 @@ export function FloatingActions({ profile }: { profile: Profile }) {
         </button>
         {open ? (
           <div className="mt-2 w-44 rounded-md border border-line bg-bg p-2 shadow-crisp" role="menu">
-            <a className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface" href="/" role="menuitem">
-              首页
-            </a>
-            <a
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
-              href="/writing/"
-              role="menuitem"
-            >
-              写作作品
-            </a>
-            <a
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
-              href="/projects/"
-              role="menuitem"
-            >
-              AI 项目
-            </a>
+            {profile.navigation.map((item) => (
+              <a
+                className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
+                href={item.href}
+                key={item.href}
+                role="menuitem"
+              >
+                {item.label}
+              </a>
+            ))}
             <a
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
               href={profile.resumeUrl}
@@ -78,7 +71,7 @@ export function FloatingActions({ profile }: { profile: Profile }) {
               target="_blank"
             >
               <ExternalLink aria-hidden size={16} />
-              LinkedIn
+              领英
             </a>
           </div>
         ) : null}
