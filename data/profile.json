@@ -13,13 +13,13 @@
   "educationLogos": [
     {
       "name": "中国人民大学",
-      "image": "/ruc-logo-placeholder.svg",
-      "alt": "中国人民大学校徽占位图"
+      "image": "/ruc-logo.svg",
+      "alt": "中国人民大学校徽"
     },
     {
       "name": "University of Amsterdam",
-      "image": "/uva-logo-placeholder.svg",
-      "alt": "University of Amsterdam 校徽占位图"
+      "image": "/uva-logo.svg",
+      "alt": "University of Amsterdam 校徽"
     }
   ],
   "highlights": [
