@@ -35,7 +35,7 @@ export default function HomePage() {
               className="inline-flex min-h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-semibold text-white transition hover:bg-ink"
               href="/writing/"
             >
-              查看写作作品
+              查看内容作品
               <ArrowRight aria-hidden size={18} />
             </Link>
             <Link
@@ -88,9 +88,9 @@ export default function HomePage() {
         <div>
           <SectionHeading
             actionHref="/writing/"
-            actionLabel="全部写作"
-            description="先用示例作品搭出信息结构，后续可以逐条替换为真实链接。"
-            title="写作作品"
+            actionLabel="全部内容"
+            description="精选播客制作、法治报道、数据报道、品牌故事与城市商业报道。"
+            title="内容作品"
           />
           <div className="mt-7 space-y-4">
             {featuredWriting.map((item) => (

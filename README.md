@@ -1,6 +1,6 @@
 # 杜博涵个人作品集
 
-这是一个中文个人作品集 demo，用于展示写作作品、AI 项目和简历入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
+这是一个中文个人作品集 demo，用于展示内容作品、AI 项目和简历入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
 
 ## 本地运行
 
@@ -91,7 +91,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - 只改文字时，改 `label` 就行。
 - 不建议随便改 `href`，除非已经有对应页面。
 
-例子：如果以后觉得“写作作品”太窄，可以把它改成：
+例子：如果以后觉得“内容作品”还需要更宽，可以把它改成：
 
 ```json
 "label": "内容作品"
@@ -99,7 +99,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 
 如果要新增一个导航项，例如 `研究`，需要先有对应页面，比如 `/research/`。否则导航能显示，但点进去会是 404。
 
-### 新增写作作品
+### 新增内容作品
 
 编辑 `data/writing.json`，复制一个对象并修改字段：
 
@@ -108,7 +108,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
   "title": "文章标题",
   "publication": "发表媒体或平台",
   "date": "2026-06-21",
-  "category": "新闻报道",
+  "category": "法治报道",
   "description": "一到两句话介绍这篇作品。",
   "link": "https://example.com",
   "featured": true
@@ -117,7 +117,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 
 说明：
 
-- `category` 目前支持 `新闻报道`、`评论`、`播客`，会影响写作页筛选。
+- `category` 会自动生成内容作品页的筛选按钮。现在可以使用 `播客制作`、`法治报道`、`数据报道`、`品牌与人物故事`、`商业与城市报道`，以后也可以新增别的类别。
 - `date` 用 `YYYY-MM-DD` 格式。
 - `featured: true` 会让这条作品出现在首页。
 - `link` 可以是媒体链接、公众号链接、播客链接或 PDF 链接。

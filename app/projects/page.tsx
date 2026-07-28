@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <main className="content-width pb-20 pt-12 md:pt-18">
       <SectionHeading
-        description="当前重点先放 AI 播客和个人论文，后续可以继续加入数据新闻、研究工具或产品原型。示例数据位于 data/projects.json。"
+        description="当前重点先放 AI 播客和个人论文，后续可以继续加入数据新闻、研究工具或产品原型。"
         title="AI 与研究项目"
       />
       <div className="mt-9 grid gap-5 md:grid-cols-2">

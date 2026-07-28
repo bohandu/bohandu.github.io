@@ -4,10 +4,13 @@ import { useMemo, useState } from "react";
 import { WorkCard } from "@/components/WorkCard";
 import type { WorkSummary } from "@/lib/content";
 
-const categories = ["全部", "新闻报道", "评论", "播客"];
-
 export function WritingPortfolio({ items }: { items: WorkSummary[] }) {
   const [activeCategory, setActiveCategory] = useState("全部");
+
+  const categories = useMemo(
+    () => ["全部", ...Array.from(new Set(items.map((item) => item.category)))],
+    [items]
+  );
 
   const filteredItems = useMemo(() => {
     if (activeCategory === "全部") {
