@@ -3,8 +3,6 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowUpRight,
-  CheckCircle2,
-  Code2,
   Database,
   Gauge,
   Languages,
@@ -42,29 +40,16 @@ const featureItems = [
     icon: Gauge
   },
   {
-    title: "社交媒体片段筛选",
+    title: "社媒推广建议",
     description: "根据最终音频和 SRT 推荐 40-60 秒候选片段，必要时提供保持逻辑连续性的轻度拼接方案。",
     icon: Share2
-  }
-];
-
-const roleItems = [
-  {
-    title: "我负责",
-    description: "需求梳理、工作流设计、Prompt 设计、功能取舍、界面反馈、判断标准和测试迭代。",
-    icon: CheckCircle2
-  },
-  {
-    title: "Codex 辅助",
-    description: "前后端代码实现、功能调试、测试补充和界面调整，帮助把编辑流程转化为可运行工具。",
-    icon: Code2
   }
 ];
 
 const principleItems = [
   {
     title: "本地优先",
-    description: "资料和音频保存在本机，无须额外购买云端 API。",
+    description: "资料和音频保存在本机，并结合本地语音识别与音频测量组件。",
     icon: Database
   },
   {
@@ -109,22 +94,15 @@ export default function PodcastAiWorkbenchPage() {
 
       <section className="grid gap-8 border-b border-line pb-10 pt-8 md:grid-cols-[minmax(0,1fr)_minmax(320px,520px)] md:items-center md:pb-14">
         <div className="copy-width">
-          <div className="flex flex-wrap gap-2">
-            {["AI 辅助开发", "Local-first", "Human-in-the-loop"].map((tag) => (
-              <span className="rounded-full bg-primary-soft px-3 py-1 text-xs font-semibold text-primary" key={tag}>
-                {tag}
-              </span>
-            ))}
-          </div>
-          <h1 className="mt-5 text-balance text-4xl font-semibold leading-tight md:text-6xl">
+          <h1 className="text-balance text-4xl font-semibold leading-tight md:text-6xl">
             播客 AI 生产工作台
           </h1>
           <p className="mt-5 text-xl font-medium leading-8 text-primary md:text-2xl">
-            一个使用 Codex 辅助开发、面向双语商业播客生产的本地 AI 工作台。
+            一个面向双语商业播客生产的本地 AI 工作台。
           </p>
           <p className="mt-5 text-base leading-8 text-muted md:text-lg">
-            它不是自动发布系统，而是把资料、Prompt、提纲、转写、剪辑建议和音频质检放进同一条编辑工作流中，
-            让 AI 输出始终服务于人工判断。
+            工作台将资料管理、对谈提纲、中英转译、发音校对、剪辑建议、响度检测和社媒推广建议整合到同一平台中，
+            并保留编辑审核、版本管理和人工判断环节。
           </p>
         </div>
 
@@ -144,7 +122,7 @@ export default function PodcastAiWorkbenchPage() {
         </div>
         <div className="copy-width space-y-4 text-base leading-8 text-muted md:text-lg">
           <p>
-            这是我根据实际双语播客生产流程设计，并在 Codex 协助下开发的本地工作台，服务于 Caixin Global 英文播客的多系列节目。
+            这是我根据实际双语播客生产流程设计的本地工作台，服务于 Caixin Global 英文播客的多系列节目。
           </p>
           <p>
             它将原本分散在 Prompt、文件夹和不同软件中的工作整合到单期节目流程中。用户上传资料并选择任务后，系统会自动调用对应栏目的 Prompt、资料和成果版本，同时保留编辑审核与修改环节。
@@ -174,34 +152,6 @@ export default function PodcastAiWorkbenchPage() {
               </article>
             );
           })}
-        </div>
-      </section>
-
-      <section className="grid gap-8 border-b border-line py-12 md:grid-cols-[280px_minmax(0,1fr)]">
-        <div>
-          <h2 className="text-3xl font-semibold leading-tight">开发方式</h2>
-          <p className="mt-3 text-sm leading-6 text-muted">
-            明确呈现 AI 辅助开发，不把工具包装成完全手写项目。
-          </p>
-        </div>
-        <div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {roleItems.map((item) => {
-              const Icon = item.icon;
-              return (
-                <article className="stable-card p-5" key={item.title}>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-accent-soft text-ink">
-                    <Icon aria-hidden size={20} />
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold leading-7">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-muted">{item.description}</p>
-                </article>
-              );
-            })}
-          </div>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-muted">
-            工作台采用 React、TypeScript、FastAPI 和 SQLite 构建，通过 Codex CLI 使用 ChatGPT 账户能力，并结合本地语音识别与音频测量组件。
-          </p>
         </div>
       </section>
 

@@ -2,10 +2,7 @@
   {
     "title": "播客 AI 生产工作台",
     "date": "2026-07-29",
-    "status": "持续迭代",
-    "description": "使用 Codex 辅助开发的本地播客工作台，将资料管理、对谈提纲、中英转译、发音校对、剪辑建议、响度检测和片段筛选整合到同一流程中。",
-    "technologies": ["AI 辅助开发", "播客生产", "Workflow 设计"],
-    "tags": ["AI", "Podcast"],
+    "description": "将资料管理、对谈提纲、中英转译、发音校对、剪辑建议、响度检测和社媒推广建议整合到同一平台中。",
     "thumbnail": "/projects/podcast-workbench-overview.webp",
     "thumbnailAlt": "播客 AI 生产工作台总览界面截图",
     "link": "/projects/podcast-ai-workbench/"
@@ -13,10 +10,7 @@
   {
     "title": "个人论文与传播研究",
     "date": "2026-05-01",
-    "status": "整理中",
     "description": "围绕新闻传播、平台内容与公共议题展开研究整理，后续可补充摘要、方法、数据和论文链接。",
-    "technologies": ["传播研究", "文献整理", "内容分析"],
-    "tags": ["Research", "Writing"],
     "thumbnail": "/project-paper.svg",
     "thumbnailAlt": "个人论文与传播研究项目封面",
     "link": "https://example.com"
@@ -24,10 +18,7 @@
   {
     "title": "媒体研究工具箱",
     "date": "2026-07-01",
-    "status": "规划中",
     "description": "预留给数据整理、文本分析、可视化和小型内容产品原型，用于把研究流程沉淀成可复用工具。",
-    "technologies": ["文本分析", "数据可视化", "产品原型"],
-    "tags": ["Tools", "Data"],
     "thumbnail": "/project-toolkit.svg",
     "thumbnailAlt": "媒体研究工具箱项目封面",
     "link": "https://example.com"

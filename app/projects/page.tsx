@@ -33,25 +33,8 @@ export default function ProjectsPage() {
                 width={640}
               />
               <div className="p-5">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-ink">
-                    {project.status}
-                  </span>
-                  {project.tags.map((tag) => (
-                    <span className="rounded-full bg-surface px-3 py-1 text-xs font-medium text-muted" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <h2 className="mt-4 text-2xl font-semibold leading-snug">{project.title}</h2>
+                <h2 className="text-2xl font-semibold leading-snug">{project.title}</h2>
                 <p className="mt-3 text-base leading-7 text-muted">{project.description}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {project.technologies.map((technology) => (
-                    <span className="rounded-md border border-line px-2.5 py-1 text-xs font-medium text-muted" key={technology}>
-                      {technology}
-                    </span>
-                  ))}
-                </div>
                 {isExternal ? (
                   <a className={linkClass} href={project.link} rel="noreferrer" target="_blank">
                     查看项目

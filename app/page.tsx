@@ -110,7 +110,7 @@ export default function HomePage() {
           />
           <div className="mt-7 space-y-4">
             {latestProjects.map((item) => (
-              <WorkCard item={item} key={item.title} />
+              <WorkCard hideMeta item={item} key={item.title} />
             ))}
           </div>
         </div>

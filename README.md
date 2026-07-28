@@ -135,10 +135,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 {
   "title": "项目标题",
   "date": "2026-06-21",
-  "status": "进行中",
   "description": "项目简介。",
-  "technologies": ["AI 辅助写作", "播客制作"],
-  "tags": ["AI", "Podcast"],
   "thumbnail": "/project-podcast.svg",
   "thumbnailAlt": "项目封面说明",
   "link": "https://example.com"
@@ -148,9 +145,8 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 说明：
 
 - `thumbnail` 指向 `public` 文件夹里的图片。
-- `technologies` 会显示为技术 / 方法标签。
-- `tags` 会在首页摘要里显示。
 - AI 项目会自动按 `date` 倒序排列，首页会展示最新项目。
+- 项目卡片目前只显示封面、标题、简介和链接，不显示状态或标签。
 
 ## 图片、校徽和简历
 

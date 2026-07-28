@@ -1,18 +1,22 @@
 import { ArrowUpRight } from "lucide-react";
 import type { WorkSummary } from "@/lib/content";
 
-export function WorkCard({ item }: { item: WorkSummary }) {
+export function WorkCard({ hideMeta = false, item }: { hideMeta?: boolean; item: WorkSummary }) {
   const hasListenLinks = item.links && item.links.length > 0;
   const hasPrimaryLink = Boolean(item.link);
 
   return (
     <article className="stable-card p-5 transition hover:border-primary">
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-muted">
-        <span className="rounded-full bg-primary-soft px-3 py-1 text-xs font-semibold text-primary">{item.category}</span>
-        <span>{item.source}</span>
-        <time dateTime={item.date}>{item.dateLabel}</time>
-      </div>
-      <h3 className="mt-4 text-xl font-semibold leading-snug">{item.title}</h3>
+      {hideMeta ? null : (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-muted">
+          <span className="rounded-full bg-primary-soft px-3 py-1 text-xs font-semibold text-primary">{item.category}</span>
+          <span>{item.source}</span>
+          <time dateTime={item.date}>{item.dateLabel}</time>
+        </div>
+      )}
+      <h3 className={hideMeta ? "text-xl font-semibold leading-snug" : "mt-4 text-xl font-semibold leading-snug"}>
+        {item.title}
+      </h3>
       <p className="mt-3 text-sm leading-6 text-muted">{item.description}</p>
       {hasListenLinks ? (
         <div className="mt-4 flex flex-wrap items-center gap-2 text-sm font-semibold">

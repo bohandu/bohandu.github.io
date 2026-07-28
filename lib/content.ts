@@ -15,7 +15,14 @@ export type WritingItem = {
   links?: { label: string; url: string }[];
 };
 
-export type ProjectItem = (typeof projectsData)[number];
+export type ProjectItem = {
+  title: string;
+  date: string;
+  description: string;
+  thumbnail: string;
+  thumbnailAlt: string;
+  link: string;
+};
 
 export type WorkSummary = {
   title: string;
@@ -30,6 +37,7 @@ export type WorkSummary = {
 };
 
 const writingItems = writingData as WritingItem[];
+const projectItems = projectsData as ProjectItem[];
 
 function formatChineseDate(date: string) {
   const parsed = new Date(`${date}T00:00:00`);
@@ -76,7 +84,7 @@ export function getLatestWriting() {
 }
 
 export function getProjects() {
-  return sortByDateDesc(projectsData);
+  return sortByDateDesc(projectItems);
 }
 
 export function getLatestProjects(): WorkSummary[] {
@@ -84,8 +92,8 @@ export function getLatestProjects(): WorkSummary[] {
     .slice(0, 4)
     .map((project) => ({
       title: project.title,
-      category: project.status,
-      source: project.tags.join(" / "),
+      category: "",
+      source: "",
       date: project.date,
       dateLabel: formatChineseDate(project.date),
       description: project.description,
