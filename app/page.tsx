@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpenText, FileText, Mic2, Sparkles } from "lucide-react";
+import { ArrowRight, BarChart3, Globe2, Languages, Sparkles } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { WorkCard } from "@/components/WorkCard";
 import { getLatestProjects, getLatestWriting, getProfile } from "@/lib/content";
 
-const highlightIcons = [BookOpenText, Mic2, Sparkles, FileText];
+const highlightIcons = {
+  全球品牌传播: Globe2,
+  中英文内容生产: Languages,
+  数据分析与可视化: BarChart3,
+  "AI 内容工作流": Sparkles
+};
 
 export default function HomePage() {
   const profile = getProfile();
@@ -20,9 +25,11 @@ export default function HomePage() {
           <h1 className="text-balance text-5xl font-semibold leading-tight md:text-7xl">
             {profile.name}
           </h1>
-          <p className="mt-5 text-2xl font-medium leading-snug text-primary md:text-3xl">
-            {profile.headline}
-          </p>
+          {profile.headline ? (
+            <p className="mt-5 text-2xl font-medium leading-snug text-primary md:text-3xl">
+              {profile.headline}
+            </p>
+          ) : null}
           <div className="mt-6 space-y-3 text-lg leading-8 text-muted">
             {profile.bio.map((paragraph) => (
               <p className="text-pretty" key={paragraph}>
@@ -67,8 +74,8 @@ export default function HomePage() {
 
       <section className="content-width border-y border-line py-10">
         <div className="grid gap-4 md:grid-cols-4">
-          {profile.highlights.map((item, index) => {
-            const Icon = highlightIcons[index % highlightIcons.length];
+          {profile.highlights.map((item) => {
+            const Icon = highlightIcons[item.title as keyof typeof highlightIcons] ?? Sparkles;
             return (
               <div className="flex gap-3" key={item.title}>
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary-soft text-primary">

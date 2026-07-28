@@ -35,7 +35,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 {
   "name": "杜博涵",
   "romanizedName": "Bohan Du",
-  "headline": "内容工作者丨传播专家",
+  "headline": "",
   "bio": [
     "第一段简介",
     "第二段简介"
@@ -55,7 +55,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 
 常改字段：
 
-- `headline`：首页短标题。
+- `headline`：首页姓名下方的短标题。留空时不显示。
 - `bio`：首页简介，每一行字符串会显示成一段。
 - `headshot`：头像路径。图片放到 `public` 后写成 `/文件名`。
 - `resumeUrl`：简历链接。默认指向 `/resume.pdf`。
@@ -112,11 +112,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
   "description": "一到两句话介绍这篇作品。",
   "link": "https://example.com",
   "linkLabel": "查看原文",
-  "links": [],
-  "notes": [
-    "站内作品摘要第一段。",
-    "站内作品摘要第二段。"
-  ]
+  "links": []
 }
 ```
 
@@ -128,7 +124,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - 首页会自动展示最新的 4 条内容作品。
 - `link` 是主要外链；`linkLabel` 是按钮文字。
 - `links` 用于一条作品有多个链接的情况，比如播客同时放 Apple Podcasts 和 Spotify。
-- `notes` 会显示为站内作品摘要。公开网站不建议直接转载媒体全文，尤其是收费墙或合著内容。
+- 公开网站不建议直接转载媒体全文，尤其是收费墙或合著内容；可以把核心内容浓缩在 `description` 里。
 
 ### 新增 AI 或研究项目
 

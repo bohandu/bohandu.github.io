@@ -13,18 +13,6 @@ export function WorkCard({ item }: { item: WorkSummary }) {
       </div>
       <h3 className="mt-4 text-xl font-semibold leading-snug">{item.title}</h3>
       <p className="mt-3 text-sm leading-6 text-muted">{item.description}</p>
-      {item.notes?.length ? (
-        <details className="mt-4 rounded-md bg-surface px-4 py-3 text-sm leading-6 text-muted">
-          <summary className="cursor-pointer font-semibold text-ink">查看作品摘要</summary>
-          <div className="mt-3 space-y-2">
-            {item.notes.map((note) => (
-              <p className="text-pretty" key={note}>
-                {note}
-              </p>
-            ))}
-          </div>
-        </details>
-      ) : null}
       {hasListenLinks ? (
         <div className="mt-4 flex flex-wrap items-center gap-2 text-sm font-semibold">
           <span className="text-ink">在</span>

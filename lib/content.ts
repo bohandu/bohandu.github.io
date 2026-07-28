@@ -18,7 +18,6 @@ export type WorkSummary = {
   link: string;
   linkLabel: string;
   links?: { label: string; url: string }[];
-  notes?: string[];
 };
 
 function formatChineseDate(date: string) {
@@ -57,8 +56,7 @@ export function getWriting(): WorkSummary[] {
     description: item.description,
     link: item.link,
     linkLabel: item.linkLabel ?? "查看原文",
-    links: item.links,
-    notes: item.notes
+    links: item.links
   }));
 }
 
