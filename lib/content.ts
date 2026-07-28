@@ -16,6 +16,9 @@ export type WorkSummary = {
   dateLabel: string;
   description: string;
   link: string;
+  linkLabel: string;
+  links?: { label: string; url: string }[];
+  notes?: string[];
 };
 
 function formatChineseDate(date: string) {
@@ -31,35 +34,45 @@ function formatChineseDate(date: string) {
   }).format(parsed);
 }
 
+function sortByDateDesc<T extends { date: string }>(items: T[]) {
+  return [...items].sort((left, right) => {
+    const leftTime = new Date(`${left.date}T00:00:00`).valueOf();
+    const rightTime = new Date(`${right.date}T00:00:00`).valueOf();
+
+    return rightTime - leftTime;
+  });
+}
+
 export function getProfile() {
   return profileData;
 }
 
 export function getWriting(): WorkSummary[] {
-  return writingData.map((item) => ({
+  return sortByDateDesc(writingData).map((item) => ({
     title: item.title,
     category: item.category,
     source: item.publication,
     date: item.date,
     dateLabel: formatChineseDate(item.date),
     description: item.description,
-    link: item.link
+    link: item.link,
+    linkLabel: item.linkLabel ?? "查看原文",
+    links: item.links,
+    notes: item.notes
   }));
 }
 
-export function getFeaturedWriting() {
-  return getWriting().filter((item) =>
-    writingData.find((rawItem) => rawItem.title === item.title && rawItem.featured)
-  );
+export function getLatestWriting() {
+  return getWriting().slice(0, 4);
 }
 
 export function getProjects() {
-  return projectsData;
+  return sortByDateDesc(projectsData);
 }
 
-export function getFeaturedProjects(): WorkSummary[] {
-  return projectsData
-    .filter((project) => project.featured)
+export function getLatestProjects(): WorkSummary[] {
+  return getProjects()
+    .slice(0, 4)
     .map((project) => ({
       title: project.title,
       category: project.status,
@@ -67,6 +80,7 @@ export function getFeaturedProjects(): WorkSummary[] {
       date: project.date,
       dateLabel: formatChineseDate(project.date),
       description: project.description,
-      link: project.link
+      link: project.link,
+      linkLabel: "查看项目"
     }));
 }

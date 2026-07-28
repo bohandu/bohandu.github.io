@@ -1,6 +1,6 @@
 # 杜博涵个人作品集
 
-这是一个中文个人作品集 demo，用于展示内容作品、AI 项目和简历入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
+这是一个中文个人作品集，用于展示内容作品、AI 项目和简历入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
 
 ## 本地运行
 
@@ -111,7 +111,12 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
   "category": "法治报道",
   "description": "一到两句话介绍这篇作品。",
   "link": "https://example.com",
-  "featured": true
+  "linkLabel": "查看原文",
+  "links": [],
+  "notes": [
+    "站内作品摘要第一段。",
+    "站内作品摘要第二段。"
+  ]
 }
 ```
 
@@ -119,8 +124,11 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 
 - `category` 会自动生成内容作品页的筛选按钮。现在可以使用 `播客制作`、`法治报道`、`数据报道`、`品牌与人物故事`、`商业与城市报道`，以后也可以新增别的类别。
 - `date` 用 `YYYY-MM-DD` 格式。
-- `featured: true` 会让这条作品出现在首页。
-- `link` 可以是媒体链接、公众号链接、播客链接或 PDF 链接。
+- 内容作品会自动按 `date` 倒序排列，最新作品排在最前面。
+- 首页会自动展示最新的 4 条内容作品。
+- `link` 是主要外链；`linkLabel` 是按钮文字。
+- `links` 用于一条作品有多个链接的情况，比如播客同时放 Apple Podcasts 和 Spotify。
+- `notes` 会显示为站内作品摘要。公开网站不建议直接转载媒体全文，尤其是收费墙或合著内容。
 
 ### 新增 AI 或研究项目
 
@@ -136,8 +144,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
   "tags": ["AI", "Podcast"],
   "thumbnail": "/project-podcast.svg",
   "thumbnailAlt": "项目封面说明",
-  "link": "https://example.com",
-  "featured": true
+  "link": "https://example.com"
 }
 ```
 
@@ -146,7 +153,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - `thumbnail` 指向 `public` 文件夹里的图片。
 - `technologies` 会显示为技术 / 方法标签。
 - `tags` 会在首页摘要里显示。
-- `featured: true` 会让项目出现在首页。
+- AI 项目会自动按 `date` 倒序排列，首页会展示最新项目。
 
 ## 图片、校徽和简历
 

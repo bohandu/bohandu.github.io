@@ -3,14 +3,14 @@ import Link from "next/link";
 import { ArrowRight, BookOpenText, FileText, Mic2, Sparkles } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { WorkCard } from "@/components/WorkCard";
-import { getFeaturedProjects, getFeaturedWriting, getProfile } from "@/lib/content";
+import { getLatestProjects, getLatestWriting, getProfile } from "@/lib/content";
 
 const highlightIcons = [BookOpenText, Mic2, Sparkles, FileText];
 
 export default function HomePage() {
   const profile = getProfile();
-  const featuredWriting = getFeaturedWriting();
-  const featuredProjects = getFeaturedProjects();
+  const latestWriting = getLatestWriting();
+  const latestProjects = getLatestProjects();
 
   return (
     <main>
@@ -50,7 +50,7 @@ export default function HomePage() {
 
         <aside className="stable-card overflow-hidden bg-surface">
           <Image
-            alt="杜博涵头像占位图"
+            alt="杜博涵个人头像"
             className="h-auto w-full"
             height={420}
             priority
@@ -59,7 +59,7 @@ export default function HomePage() {
           />
           <div className="border-t border-line p-5">
             <p className="text-sm leading-6 text-muted">
-              头像区域可替换为正式职业照。将图片放入 public 文件夹后，在 data/profile.json 中修改 headshot 字段即可。
+              作品围绕全球商业、法治与城市议题展开，并延伸到 AI 辅助内容生产与数据故事。
             </p>
           </div>
         </aside>
@@ -89,11 +89,11 @@ export default function HomePage() {
           <SectionHeading
             actionHref="/writing/"
             actionLabel="全部内容"
-            description="精选播客制作、法治报道、数据报道、品牌故事与城市商业报道。"
+            description="播客、报道、数据与品牌叙事作品。"
             title="内容作品"
           />
           <div className="mt-7 space-y-4">
-            {featuredWriting.map((item) => (
+            {latestWriting.map((item) => (
               <WorkCard item={item} key={item.title} />
             ))}
           </div>
@@ -103,11 +103,11 @@ export default function HomePage() {
           <SectionHeading
             actionHref="/projects/"
             actionLabel="全部项目"
-            description="展示 AI 播客、个人论文和后续实验项目，便于投递不同方向时调整重点。"
-            title="AI 与研究项目"
+            description="AI 内容工作流、播客生产与研究工具化探索。"
+            title="AI 项目"
           />
           <div className="mt-7 space-y-4">
-            {featuredProjects.map((item) => (
+            {latestProjects.map((item) => (
               <WorkCard item={item} key={item.title} />
             ))}
           </div>

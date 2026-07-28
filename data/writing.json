@@ -4,27 +4,60 @@
     "publication": "China Business Insider - News From Caixin Global",
     "date": "2026-04-24",
     "category": "播客制作",
-    "description": "围绕万科流动性压力与中国房地产调整，完成面向全球受众的英文播客制作，参与选题梳理、文本转换、结构校验与剪辑推进。",
+    "description": "节目围绕万科流动性危机展开，讨论债务压力、国资救助、表外融资网络，以及万科事件折射出的中国房地产市场深层调整。",
     "link": "https://podcasts.apple.com/us/podcast/china-business-uncovered-4-inside-vanke-and-chinas/id1442752363?i=1000763407043",
-    "featured": false
+    "linkLabel": "收听节目",
+    "links": [
+      {
+        "label": "Apple Podcasts",
+        "url": "https://podcasts.apple.com/us/podcast/china-business-uncovered-4-inside-vanke-and-chinas/id1442752363?i=1000763407043"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/episode/2EOPTRhcWpejrAwAmhwRlE"
+      }
+    ],
+    "notes": []
   },
   {
     "title": "China Business Uncovered #5: How China's Tech Elite Got Burned by a Failing Luxury-Car Dealer",
     "publication": "China Business Insider - News From Caixin Global",
     "date": "2026-07-03",
     "category": "播客制作",
-    "description": "梳理豪车经销商暴雷事件与高净值客户损失，负责 AI 辅助英文播客生产流程中的提纲、文本校验与制作协调。",
+    "description": "节目讲述豪车经销商宝利德从高端汽车销售扩张到破产崩塌的过程，呈现其如何牵动阿里、网易、高瓴等相关投资者网络。",
     "link": "https://podcasts.apple.com/us/podcast/china-business-uncovered-5-how-chinas-tech-elite-got/id1442752363?i=1000775319614",
-    "featured": false
+    "linkLabel": "收听节目",
+    "links": [
+      {
+        "label": "Apple Podcasts",
+        "url": "https://podcasts.apple.com/us/podcast/china-business-uncovered-5-how-chinas-tech-elite-got/id1442752363?i=1000775319614"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/episode/3AFCn8mjSchv9PQnvHqVWA"
+      }
+    ],
+    "notes": []
   },
   {
     "title": "China Business Uncovered #6: How a Lost Masterpiece Sparked a Museum Scandal",
     "publication": "China Business Insider - News From Caixin Global",
     "date": "2026-07-17",
     "category": "播客制作",
-    "description": "从失踪名画引发的博物馆争议切入，完成面向全球受众的英文播客制作与发布支持。",
+    "description": "节目从《江南春》手卷重现拍卖市场切入，追溯一件捐赠给南京博物院的重要文物如何被鉴定、移出馆藏并引发公共争议。",
     "link": "https://podcasts.apple.com/us/podcast/china-business-uncovered-6-how-a-lost-masterpiece/id1442752363?i=1000777185224",
-    "featured": true
+    "linkLabel": "收听节目",
+    "links": [
+      {
+        "label": "Apple Podcasts",
+        "url": "https://podcasts.apple.com/us/podcast/china-business-uncovered-6-how-a-lost-masterpiece/id1442752363?i=1000777185224"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/episode/3pyc2QCUKiY2UyDpZ6vBnJ"
+      }
+    ],
+    "notes": []
   },
   {
     "title": "财新周刊｜外国律所进退之间",
@@ -33,7 +66,12 @@
     "category": "法治报道",
     "description": "观察外商投资环境变化下外国律所在华业务缩减、整合与新进布局，梳理涉外法律服务市场转型。",
     "link": "https://weekly.caixin.com/2025-04-26/102313439.html",
-    "featured": true
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道从外资数据和外国律所代表处变化切入，梳理美国、英国、新加坡及东南亚律所在中国内地与香港市场的收缩、整合和新设代表处情况。",
+      "文章进一步讨论中国企业出海、本土律所竞争、法律服务价格压力和涉外法治需求变化，呈现外国律所进退背后的市场逻辑。"
+    ]
   },
   {
     "title": "财新周刊｜扶贫局窝案",
@@ -42,7 +80,12 @@
     "category": "法治报道",
     "description": "追踪青海扶贫系统反腐窝案，围绕扶贫资金监管、机构改革与干部责任链条梳理案件脉络。",
     "link": "https://weekly.caixin.com/2025-05-24/102322868.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道以青海扶贫系统多名干部被查为主线，回溯脱贫攻坚时期扶贫项目和资金监管中的风险点。",
+      "文章结合裁判文书、巡视反馈和机构改革背景，呈现扶贫局到乡村振兴局转换过程中暴露出的权力链条与责任问题。"
+    ]
   },
   {
     "title": "法眼｜大同订婚强奸案维持原判 性同意的边界何在",
@@ -51,7 +94,12 @@
     "category": "法治报道",
     "description": "围绕大同订婚强奸案二审维持原判，解释性同意边界、婚约关系与强奸罪入罪标准。",
     "link": "https://china.caixin.com/2025-04-17/102310439.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道聚焦订婚、彩礼和亲密关系是否影响强奸罪认定这一争议，梳理二审维持原判的法律逻辑。",
+      "文章采访和整理法律界观点，强调性同意应以当事人真实意愿为核心，婚约关系不能替代明确同意。"
+    ]
   },
   {
     "title": "刑事分案并案争议不断 如何保障司法公正",
@@ -60,7 +108,12 @@
     "category": "法治报道",
     "description": "聚焦刑事案件分案、并案争议，梳理学界与实务界对庭审实质化和司法公正的制度建议。",
     "link": "https://china.caixin.com/2025-05-13/102319183.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道从刑事分案审理的司法实践出发，呈现涉黑涉恶、诈骗、职务犯罪等复杂案件中分案带来的事实切割和辩护难题。",
+      "文章整理学者和实务人士建议，包括完善刑事诉讼法规定、保障当事人异议权，以及推动庭审实质化。"
+    ]
   },
   {
     "title": "赢了官司开不了店 一茅台酒经销商遭遇“鬼打墙”",
@@ -69,7 +122,12 @@
     "category": "法治报道",
     "description": "通过茅台酒经销商民告官案例，呈现行政处罚、政府信息公开和经销权争议背后的程序问题。",
     "link": "https://china.caixin.com/2025-06-18/102331516.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道围绕经销商郭亮与地方市场监管部门、茅台销售体系之间的多轮诉讼，呈现行政处罚被撤销后经营权仍难恢复的困境。",
+      "文章关注政府信息公开、备案审查、行政函件效力和诉讼期限等问题，展示个案背后的程序正义议题。"
+    ]
   },
   {
     "title": "南京安置房骗局 副科长缘何 7 年骗走 4 亿元",
@@ -78,7 +136,12 @@
     "category": "法治报道",
     "description": "调查南京安置房骗局如何持续近七年，梳理虚假协议、中介网络、涉案资金与追赃挽损困境。",
     "link": "https://china.caixin.com/2025-07-18/102342648.html",
-    "featured": true
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道还原南京某街道副科长虚构低价拆迁安置房源、伪造协议和公章，并通过熟人和中介网络持续售卖的过程。",
+      "文章梳理案件判决、资金流向、追赃挽损和安置房交易灰色地带，解释漏洞明显的骗局为何能维持多年。"
+    ]
   },
   {
     "title": "China's Housing Slump Persists, Yet Homes Remain Unaffordable",
@@ -87,7 +150,12 @@
     "category": "数据报道",
     "description": "以官方房价、收入数据和交互式地图呈现中国楼市下行背景下的住房负担问题，讨论房价回落与居民购买力之间的落差。",
     "link": "https://bohandu.github.io/china-housing-affordability/",
-    "featured": true
+    "linkLabel": "查看网页版",
+    "links": [],
+    "notes": [
+      "作品结合国家统计局等公开数据，比较中国重点城市新建住宅价格、居民收入和购房负担变化。",
+      "交互式地图用于呈现不同城市的住房可负担性差异，强调房价下行并不必然意味着普通居民更容易买房。"
+    ]
   },
   {
     "title": "当中视频与电商相遇，他们发现新的生活“致富经”",
@@ -96,7 +164,12 @@
     "category": "品牌与人物故事",
     "description": "以西瓜视频《生活致富记》为线索，讲述中视频、电商与乡村生活内容结合后的创作者故事。",
     "link": "https://mp.weixin.qq.com/s/J3KTlP5ZbbBxhliWHTpOqg",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "文章围绕《生活致富记》系列内容，讲述普通创作者如何借助中视频和电商连接农产品、民宿、家居等真实生活场景。",
+      "写作重点放在平台内容、个体叙事和商业转化之间的关系，适合展示品牌传播与人物故事能力。"
+    ]
   },
   {
     "title": "复旦教授张军平入驻抖音“新知十讲”，带网友探索“AI 进化论”",
@@ -105,7 +178,12 @@
     "category": "品牌与人物故事",
     "description": "围绕抖音“新知十讲”中的人工智能科普内容，介绍复旦教授张军平对 AI 发展与社会议题的讲解。",
     "link": "https://www.rmzxw.com.cn/c/2022-06-24/3146329.shtml",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "文章介绍复旦大学教授张军平参与“新知十讲”知识分享计划，围绕人工智能、机器人、自动驾驶和 AI 伦理等议题展开科普。",
+      "内容以专家背景、节目议题和公众学习需求为线索，突出平台知识内容的传播价值。"
+    ]
   },
   {
     "title": "艺术的本质是斗争？复旦大学教授王德峰在抖音分享艺术哲学",
@@ -114,7 +192,12 @@
     "category": "品牌与人物故事",
     "description": "记录复旦教授王德峰在短视频公开课中对艺术哲学、青年表达与知识传播的分享。",
     "link": "https://cn.chinadaily.com.cn/a/202205/06/WS62749308a3101c3ee7ad3f70.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "文章围绕《王德峰的哲学研修班》节目，呈现王德峰教授对艺术、真理、艺术家与青年表达的阐释。",
+      "文本服务于平台知识内容传播，兼顾人物介绍、节目亮点和观众讨论反馈。"
+    ]
   },
   {
     "title": "您的“人口余额”已不足：四大一线城市人口上限仅剩 411.6 万，天津、苏州等仍有较大增长空间",
@@ -123,7 +206,12 @@
     "category": "商业与城市报道",
     "description": "基于城市规划与人口普查数据，比较一线、新一线和省会城市未来常住人口增长空间。",
     "link": "https://www.21jingji.com/article/20211021/herald/efc74e232f638fe4f50581dacec42f97.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道用“人口余额”概念衡量城市规划人口目标与现实常住人口之间的差额，比较多座城市未来增长空间。",
+      "文章结合一线城市、新一线城市和省会城市规划，讨论人口向大城市集聚与卫星城承接增长之间的关系。"
+    ]
   },
   {
     "title": "海淀家长“鸡娃”遭遇急刹车，“一对一”培训千元小时",
@@ -132,6 +220,11 @@
     "category": "商业与城市报道",
     "description": "从海淀家长在“双减”后的选择切入，呈现校外培训收缩后教育焦虑与升学评价压力。",
     "link": "https://m.21jingji.com/article/20210924/8253635635859f8e3735fc8e181374a6_zaker.html",
-    "featured": false
+    "linkLabel": "查看原文",
+    "links": [],
+    "notes": [
+      "报道观察“双减”政策落地后，北京海淀家长面对线下培训收缩、一对一价格上涨和升学压力时的选择。",
+      "文章通过家长、专家和市场变化呈现教育评价体系未变时，家庭教育焦虑如何转向更隐蔽、更高价的培训形式。"
+    ]
   }
 ]
