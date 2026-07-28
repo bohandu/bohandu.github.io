@@ -19,10 +19,10 @@ export default function HomePage() {
 
   return (
     <main>
-      <section className="content-width grid gap-10 pb-16 pt-12 md:grid-cols-[minmax(0,1fr)_340px] md:items-end md:pb-24 md:pt-20">
+      <section className="content-width grid gap-8 pb-10 pt-8 md:grid-cols-[minmax(0,1fr)_320px] md:items-start md:pb-14 md:pt-10 lg:grid-cols-[minmax(0,1fr)_340px]">
         <div className="copy-width">
-          <p className="mb-5 text-sm font-semibold text-primary">{profile.romanizedName}</p>
-          <h1 className="text-balance text-5xl font-semibold leading-tight md:text-7xl">
+          <p className="mb-4 text-sm font-semibold text-primary">{profile.romanizedName}</p>
+          <h1 className="text-balance text-5xl font-semibold leading-tight md:text-6xl">
             {profile.name}
           </h1>
           {profile.headline ? (
@@ -30,14 +30,14 @@ export default function HomePage() {
               {profile.headline}
             </p>
           ) : null}
-          <div className="mt-6 space-y-3 text-lg leading-8 text-muted">
+          <div className="mt-5 space-y-3 text-base leading-8 text-muted md:text-lg">
             {profile.bio.map((paragraph) => (
               <p className="text-pretty" key={paragraph}>
                 {paragraph}
               </p>
             ))}
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               className="inline-flex min-h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-semibold text-white transition hover:bg-ink"
               href="/writing/"
@@ -55,24 +55,19 @@ export default function HomePage() {
           </div>
         </div>
 
-        <aside className="stable-card overflow-hidden bg-surface">
+        <aside className="w-full max-w-[280px] justify-self-center sm:max-w-[300px] md:max-w-none md:justify-self-end">
           <Image
-            alt="杜博涵个人头像"
-            className="h-auto w-full"
-            height={420}
+            alt="杜博涵个人照片"
+            className="stable-card aspect-[3/4] w-full object-cover object-[50%_42%]"
+            height={1200}
             priority
             src={profile.headshot}
-            width={340}
+            width={900}
           />
-          <div className="border-t border-line p-5">
-            <p className="text-sm leading-6 text-muted">
-              作品围绕全球商业、法治与城市议题展开，并延伸到 AI 辅助内容生产与数据故事。
-            </p>
-          </div>
         </aside>
       </section>
 
-      <section className="content-width border-y border-line py-10">
+      <section className="content-width border-y border-line py-8">
         <div className="grid gap-4 md:grid-cols-4">
           {profile.highlights.map((item) => {
             const Icon = highlightIcons[item.title as keyof typeof highlightIcons] ?? Sparkles;

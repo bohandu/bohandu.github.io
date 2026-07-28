@@ -40,7 +40,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
     "第一段简介",
     "第二段简介"
   ],
-  "headshot": "/portrait-placeholder.svg",
+  "headshot": "/bohan-du-photo.webp",
   "resumeUrl": "/resume.pdf",
   "linkedinUrl": "https://www.linkedin.com/",
   "educationLogos": [
@@ -57,7 +57,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 
 - `headline`：首页姓名下方的短标题。留空时不显示。
 - `bio`：首页简介，每一行字符串会显示成一段。
-- `headshot`：头像路径。图片放到 `public` 后写成 `/文件名`。
+- `headshot`：头像路径。图片放到 `public` 后写成 `/文件名`。建议使用 3:4 或 4:5 竖版照片。
 - `resumeUrl`：简历链接。默认指向 `/resume.pdf`。
 - `linkedinUrl`：LinkedIn 链接。
 - `navigation`：顶部导航栏文字和链接。

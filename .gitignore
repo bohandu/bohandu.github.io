@@ -10,3 +10,6 @@ dist
 dev-server.log
 dev-server.err
 *.tsbuildinfo
+
+# Local raw source photo. The optimized web image lives in public/.
+/个人照片.jpg
