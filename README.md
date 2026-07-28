@@ -1,6 +1,6 @@
 # 杜博涵个人作品集
 
-这是一个中文个人作品集，用于展示内容作品、AI 项目和简历入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
+这是一个中文个人作品集，用于展示内容作品、AI 项目和简历索取入口。技术栈为 Next.js、TypeScript、Tailwind CSS，构建结果可部署到 GitHub Pages。
 
 ## 本地运行
 
@@ -13,7 +13,7 @@ pnpm dev
 
 ## 手动更新内容
 
-这个网站目前是 **JSON 驱动**，不是 Markdown 驱动。页面代码负责布局，`data` 文件夹负责内容。你后续通常只需要改 JSON 文件，或者替换 `public` 文件夹里的图片 / PDF。
+这个网站目前是 **JSON 驱动**，不是 Markdown 驱动。页面代码负责布局，`data` 文件夹负责内容。你后续通常只需要改 JSON 文件，或者替换 `public` 文件夹里的图片。
 
 更新流程是：
 
@@ -41,7 +41,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
     "第二段简介"
   ],
   "headshot": "/bohan-du-photo.webp",
-  "resumeUrl": "/resume.pdf",
+  "resumeUrl": "https://forms.gle/61tFYuNQKLhcTVAE6",
   "linkedinUrl": "https://www.linkedin.com/",
   "educationLogos": [
     {
@@ -58,7 +58,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - `headline`：首页姓名下方的短标题。留空时不显示。
 - `bio`：首页简介，每一行字符串会显示成一段。
 - `headshot`：头像路径。图片放到 `public` 后写成 `/文件名`。建议使用 3:4 或 4:5 竖版照片。
-- `resumeUrl`：简历链接。默认指向 `/resume.pdf`。
+- `resumeUrl`：简历索取表单链接。当前指向 Google Forms 公开填写链接。
 - `linkedinUrl`：LinkedIn 链接。
 - `navigation`：顶部导航栏文字和链接。
 - `educationLogos`：顶部名字后的校徽图片位。替换 `image` 字段即可。
@@ -148,7 +148,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - AI 项目会自动按 `date` 倒序排列，首页会展示最新项目。
 - 项目卡片目前只显示封面、标题、简介和链接，不显示状态或标签。
 
-## 图片、校徽和简历
+## 图片和校徽
 
 所有静态文件都放在 `public` 文件夹。引用时不要写 `public`，直接写 `/文件名`。
 
@@ -158,7 +158,6 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 public/headshot.jpg        -> /headshot.jpg
 public/ruc-logo.png        -> /ruc-logo.png
 public/uva-logo.png        -> /uva-logo.png
-public/resume.pdf          -> /resume.pdf
 ```
 
 顶部栏当前有两个校徽占位图：
@@ -168,17 +167,15 @@ public/resume.pdf          -> /resume.pdf
 
 后续可以替换为真实校徽文件，然后在 `data/profile.json` 的 `educationLogos` 中改 `image` 路径。建议使用 PNG 或 SVG，尺寸保持清晰，不要拉伸变形。
 
-## 添加简历
+## 修改简历索取表单
 
-将正式简历 PDF 命名为 `resume.pdf`，放入 `public` 文件夹。当前 `data/profile.json` 的 `resumeUrl` 已经指向 `/resume.pdf`。
+网站顶部的“索取简历”按钮不会直接公开 PDF，而是跳转到 `data/profile.json` 中的 `resumeUrl`。
 
-如果想保留多个版本，也可以改成：
+如果以后换了新的 Google Forms，只需要把 `resumeUrl` 改成新的公开填写链接：
 
 ```json
-"resumeUrl": "/resume-content-role.pdf"
+"resumeUrl": "https://forms.gle/你的新表单链接"
 ```
-
-然后把对应 PDF 放进 `public` 文件夹。
 
 ## 部署到 GitHub Pages
 

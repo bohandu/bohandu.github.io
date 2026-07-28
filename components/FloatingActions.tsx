@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ExternalLink, FileDown, Menu } from "lucide-react";
+import { ExternalLink, Mail, Menu } from "lucide-react";
 import type { Profile } from "@/lib/content";
 
 export function FloatingActions({ profile }: { profile: Profile }) {
@@ -16,8 +16,8 @@ export function FloatingActions({ profile }: { profile: Profile }) {
           rel="noreferrer"
           target="_blank"
         >
-          <FileDown aria-hidden size={17} />
-          简历
+          <Mail aria-hidden size={17} />
+          索取简历
         </a>
         <a
           className="inline-flex min-h-10 items-center gap-2 rounded-md border border-line bg-bg px-4 text-base font-semibold text-ink shadow-crisp transition hover:border-primary hover:text-primary"
@@ -60,8 +60,8 @@ export function FloatingActions({ profile }: { profile: Profile }) {
               role="menuitem"
               target="_blank"
             >
-              <FileDown aria-hidden size={16} />
-              简历
+              <Mail aria-hidden size={16} />
+              索取简历
             </a>
             <a
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-surface"
