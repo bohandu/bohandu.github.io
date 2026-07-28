@@ -4,7 +4,16 @@ import writingData from "@/data/writing.json";
 
 export type Profile = typeof profileData;
 
-export type WritingItem = (typeof writingData)[number];
+export type WritingItem = {
+  title: string;
+  publication: string;
+  date: string;
+  category: string;
+  description: string;
+  link?: string;
+  linkLabel?: string;
+  links?: { label: string; url: string }[];
+};
 
 export type ProjectItem = (typeof projectsData)[number];
 
@@ -15,10 +24,12 @@ export type WorkSummary = {
   date: string;
   dateLabel: string;
   description: string;
-  link: string;
+  link?: string;
   linkLabel: string;
   links?: { label: string; url: string }[];
 };
+
+const writingItems = writingData as WritingItem[];
 
 function formatChineseDate(date: string) {
   const parsed = new Date(`${date}T00:00:00`);
@@ -47,7 +58,7 @@ export function getProfile() {
 }
 
 export function getWriting(): WorkSummary[] {
-  return sortByDateDesc(writingData).map((item) => ({
+  return sortByDateDesc(writingItems).map((item) => ({
     title: item.title,
     category: item.category,
     source: item.publication,

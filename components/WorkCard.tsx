@@ -3,6 +3,7 @@ import type { WorkSummary } from "@/lib/content";
 
 export function WorkCard({ item }: { item: WorkSummary }) {
   const hasListenLinks = item.links && item.links.length > 0;
+  const hasPrimaryLink = Boolean(item.link);
 
   return (
     <article className="stable-card p-5 transition hover:border-primary">
@@ -27,7 +28,7 @@ export function WorkCard({ item }: { item: WorkSummary }) {
           ))}
           <span className="text-ink">收听</span>
         </div>
-      ) : (
+      ) : hasPrimaryLink ? (
         <a
           className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-ink"
           href={item.link}
@@ -37,7 +38,7 @@ export function WorkCard({ item }: { item: WorkSummary }) {
           {item.linkLabel}
           <ArrowUpRight aria-hidden size={17} />
         </a>
-      )}
+      ) : null}
     </article>
   );
 }

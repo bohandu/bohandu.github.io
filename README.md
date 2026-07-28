@@ -123,6 +123,7 @@ GitHub Actions 自动构建并发布到 bohandu.github.io
 - 内容作品会自动按 `date` 倒序排列，最新作品排在最前面。
 - 首页会自动展示最新的 4 条内容作品。
 - `link` 是主要外链；`linkLabel` 是按钮文字。
+- 如果某篇作品暂时没有适合公开放出的链接，可以省略 `link` 和 `linkLabel`，卡片会只显示标题、媒体、日期和简介。
 - `links` 用于一条作品有多个链接的情况，比如播客同时放 Apple Podcasts 和 Spotify。
 - 公开网站不建议直接转载媒体全文，尤其是收费墙或合著内容；可以把核心内容浓缩在 `description` 里。
 
