@@ -1,14 +1,14 @@
 [
   {
-    "title": "AI 播客实验",
-    "date": "2026-06-01",
-    "status": "进行中",
-    "description": "围绕选题研究、报道拆解、中英文本转换、脚本生成、剪辑建议和发布复盘，搭建可复用的 AI 播客生产流程。",
-    "technologies": ["AI 内容工作流", "播客生产", "中英文本转换"],
+    "title": "播客 AI 生产工作台",
+    "date": "2026-07-29",
+    "status": "持续迭代",
+    "description": "使用 Codex 辅助开发的本地播客工作台，将资料管理、对谈提纲、中英转译、发音校对、剪辑建议、响度检测和片段筛选整合到同一流程中。",
+    "technologies": ["AI 辅助开发", "播客生产", "Workflow 设计"],
     "tags": ["AI", "Podcast"],
-    "thumbnail": "/project-podcast.svg",
-    "thumbnailAlt": "AI 播客实验项目封面",
-    "link": "https://example.com"
+    "thumbnail": "/projects/podcast-workbench-overview.webp",
+    "thumbnailAlt": "播客 AI 生产工作台总览界面截图",
+    "link": "/projects/podcast-ai-workbench/"
   },
   {
     "title": "个人论文与传播研究",
